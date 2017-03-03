@@ -1,6 +1,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/seb/.oh-my-zsh
 
+# Load 4000 lines of history, but save O(∞)
+HISTSIZE=4000
+HISTFILE=~/.zsh_history
+SAVEHIST=10000000
+
 # Oh-My-ZSH theme to apply:
 ZSH_THEME="seb-multiline"
 
@@ -34,11 +39,13 @@ export NODE_ENV="development"
 
 # Personal aliases
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias v='vim'
 alias hit="pbpaste | highlight --syntax=js --font-size 20 --style=zenburn -O rtf | pbcopy"
 alias dockerized-mocha="docker run -it --rm --volume $PWD:/app --workdir /app node:0.12.7 npm install -g mocha && mocha --recursive"
 alias vps="ssh vps.vansande.org"
 alias rip-video-to-file="ffmpeg -i index.m3u8  -vcodec copy -acodec copy -bsf:a aac_adtstoasc"
 alias starthttpserver="python -m SimpleHTTPServer"
+alias migrate-mongo-dev='node ~/Work/Personal/migration/migrate-mongo/bin/migrate-mongo.js'
 
 # Load NVM
 export NVM_DIR=~/.nvm
