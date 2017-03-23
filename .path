@@ -1,15 +1,17 @@
 #!/usr/bin/env sh
 
+# Define base path
 BASE_PATH=$(cat /etc/paths | tr '\n' ':')
 export PATH=$BASE_PATH
 
-# homebrew sbin
+# Prepend Homebrew sbin
 export PATH="/usr/local/sbin:$PATH";
 
-# coreutils bin
+# Prepend coreutils bin
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
 
-# ~/bin
+# Prepend homedir bin
 export PATH="$HOME/bin:$PATH";
 
+# Define search path for man pages
 export MANPATH="/usr/local/man:$MANPATH"
