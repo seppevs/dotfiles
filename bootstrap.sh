@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git pull --quiet origin master 2>&1 >/dev/null;
+git pull --quiet origin master;
 
 rsync --exclude ".git/" \
   --exclude ".DS_Store" \
@@ -9,8 +9,8 @@ rsync --exclude ".git/" \
   --exclude "README.md" \
   --exclude "LICENSE-MIT.txt" \
   --exclude "misc/" \
-  -avh --no-perms . ~ 2>&1 >/dev/null;
+  -avh --no-perms . ~;
 
-cp ./.custom-themes/oh-my-zsh/* ~/.oh-my-zsh/themes 2>&1 >/dev/null
+cp ./.custom-themes/oh-my-zsh/* ~/.oh-my-zsh/themes
 
 source ~/.zsh_profile;
