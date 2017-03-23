@@ -1,1 +1,3 @@
 # dotfiles
+
+For macOS.

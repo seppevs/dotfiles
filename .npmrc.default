@@ -1,0 +1,5 @@
+init.author.name=Sebastian Van Sande
+init.author.email=sebastian@vansande.org
+init.license=MIT
+save=true
+save-prefix=~

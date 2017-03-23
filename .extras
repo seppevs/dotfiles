@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# Load NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# Show a fortune
+clear
+fortune -s

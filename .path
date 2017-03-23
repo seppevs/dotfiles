@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+BASE_PATH=$(cat /etc/paths | tr '\n' ':')
+export PATH=$BASE_PATH
+
+# homebrew sbin
+export PATH="/usr/local/sbin:$PATH";
+
+# coreutils bin
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
+
+# ~/bin
+export PATH="$HOME/bin:$PATH";
+
+export MANPATH="/usr/local/man:$MANPATH"

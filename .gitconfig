@@ -1,0 +1,45 @@
+[user]
+	name = Sebastian Van Sande
+	email = sebastian@vansande.org
+[core]
+	excludesfile = /Users/seb/.gitignore
+	autocrlf = input
+	editor = vim
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+	ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[merge]
+  tool = opendiff
+[apply]
+	whitespace = nowarn
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	co = checkout
+	quick-stats = ! /usr/local/bin/git-quick-stats
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+[push]
+	default = simple
+[http]
+[url "https://"]
+	insteadOf = git://
