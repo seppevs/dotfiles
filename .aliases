@@ -12,6 +12,9 @@ alias -- -="cd -"
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias v='vim'
 
+# Medialaan VPN one time pass
+alias mpass="/opt/utils/medialaan-pass.py | pbcopy"
+
 # Connect to VPS
 alias vps="ssh vps.vansande.org"
 
