@@ -9,7 +9,7 @@ HISTFILE=~/.zsh_history
 SAVEHIST=10000000
 
 # Oh-My-ZSH theme to load:
-ZSH_THEME="seb-multiline"
+ZSH_THEME="seb"
 
 # Oh-My-ZSH plugins to load:
 plugins=(git brew common-aliases dircycle docker extract history-substring-search jira mvn node osx python redis-cli ruby screen sublime sudo tmux web-search wd z zsh-syntax-highlighting)
