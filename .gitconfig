@@ -28,7 +28,9 @@
 [apply]
 	whitespace = nowarn
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  forward = merge --ff
+  merge = merge --no-ff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	co = checkout
 	quick-stats = ! /usr/local/bin/git-quick-stats
 [difftool "sourcetree"]
