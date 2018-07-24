@@ -12,7 +12,7 @@ SAVEHIST=10000000
 ZSH_THEME="seb"
 
 # Oh-My-ZSH plugins to load:
-plugins=(git brew common-aliases dircycle docker extract history-substring-search jira mvn node osx python redis-cli ruby screen sublime sudo tmux web-search wd z zsh-syntax-highlighting)
+plugins=(git brew common-aliases colored-man-pages dircycle docker extract history-substring-search jira mvn node osx python redis-cli ruby screen sublime sudo tmux web-search wd z zsh-syntax-highlighting zsh-autosuggestions)
 
 # ZSH Syntax Highlighters
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
