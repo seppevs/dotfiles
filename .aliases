@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Backups
+alias clone-to-cloud="rclone sync --checksum --filter-from ~/.config/rclone/rclone-filters.txt ~ Stack-encrypted:/Users/seb --copy-links --progress"
+alias clone-to-disk="rclone sync --checksum --filter-from ~/.config/rclone/rclone-filters.txt ~ Disk-encrypted:/Users/seb --copy-links --progress"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
