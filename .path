@@ -13,5 +13,11 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
 # Prepend homedir bin
 export PATH="$HOME/bin:$PATH";
 
+# Prepend the Homebrew Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Prepend the gems
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
 # Define search path for man pages
 export MANPATH="/usr/local/man:$MANPATH"

@@ -41,4 +41,9 @@ export M2_HOME=/usr/local/Cellar/maven/3.6.0/libexec
 # Medialaan
 export MEDIALAAN=~/Work/Medialaan
 export NODE_CONFIG_DIR=~/Work/Medialaan/projects/medialaan-services-config/local
-export NODE_ENV="development"
+export NODE_ENV='development'
+
+# Homebrew Ruby
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
