@@ -65,6 +65,9 @@ brew install unrar
 # Install terminal multiplexers
 brew install tmux
 
+# Install rclone
+brew install rclone
+
 # Install system monitoring tools
 brew install htop
 
