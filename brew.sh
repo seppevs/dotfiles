@@ -22,11 +22,11 @@ brew install findutils
 brew install zsh zsh-syntax-highlighting
 
 # Install more recent versions of some macOS tools.
-brew install gnu-sed --with-default-names
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install gnu-sed
+brew install vim
+brew install grep
+brew install openssh
+brew install screen
 brew install tree
 
 # Install git stuff
@@ -42,6 +42,7 @@ brew install python
 brew install python3
 brew install ruby
 brew install nvm
+brew install maven
 
 # Install audio/video/image tools
 brew install mpv
@@ -64,9 +65,6 @@ brew install unrar
 
 # Install terminal multiplexers
 brew install tmux
-
-# Install rclone
-brew install rclone
 
 # Install system monitoring tools
 brew install htop
